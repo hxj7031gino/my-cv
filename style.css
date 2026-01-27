@@ -174,7 +174,7 @@ main {
 }
 
 .cv-item {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 .cv-item h4 {
@@ -185,5 +185,5 @@ main {
 
 .cv-item p {
     margin-bottom: 2px;
-    line-height: 0.8;
+    line-height: 1.6;
 }
