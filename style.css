@@ -169,7 +169,7 @@ main {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 1em;
+    font-size: 1.4em;
     margin-bottom: 20px;
 }
 
@@ -184,6 +184,6 @@ main {
 }
 
 .cv-item p {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     line-height: 1.6;
 }
