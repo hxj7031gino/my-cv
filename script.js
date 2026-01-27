@@ -91,15 +91,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Close lightbox
-    const closeLightbox = () => {
-        lightbox.classList.remove('active');
-    };
+    // Lightbox functionality
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const closeLightbox = document.querySelector('.close-lightbox');
 
-    closeBtn.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) {
-            closeLightbox();
-        }
-    });
+    if (galleryItems.length > 0 && lightbox) {
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                lightbox.style.display = 'block';
+                lightboxImg.src = img.src;
+                lightboxCaption.textContent = img.dataset.description || '';
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    }
 });

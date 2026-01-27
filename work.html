@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Gino Wong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Gino Wong</a></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="statement.html">Artist Statement</a>
+            <a href="work.html">Work</a>
+            <a href="biography.html">Biography</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="work">
+            <div class="gallery-grid">
+                <!-- All existing <div class="gallery-item">...</div> will be here -->
+                <div class="gallery-item"><img src="images/image1.jpg" alt="Artwork 1" data-description="Description for Artwork 1"></div>
+                <div class="gallery-item"><img src="images/image2.jpg" alt="Artwork 2" data-description="Description for Artwork 2"></div>
+                <div class="gallery-item"><img src="images/image3.jpg" alt="Artwork 3" data-description="Description for Artwork 3"></div>
+                <div class="gallery-item"><img src="images/image4.jpg" alt="Artwork 4" data-description="Description for Artwork 4"></div>
+                <div class="gallery-item"><img src="images/image5.jpg" alt="Artwork 5" data-description="Description for Artwork 5"></div>
+                <div class="gallery-item"><img src="images/image6.jpg" alt="Artwork 6" data-description="Description for Artwork 6"></div>
+                <div class="gallery-item"><img src="images/image7.jpg" alt="Artwork 7" data-description="Description for Artwork 7"></div>
+                <div class="gallery-item"><img src="images/image8.jpg" alt="Artwork 8" data-description="Description for Artwork 8"></div>
+                <div class="gallery-item"><img src="images/image9.jpg" alt="Artwork 9" data-description="Description for Artwork 9"></div>
+                <div class="gallery-item"><img src="images/image10.jpg" alt="Artwork 10" data-description="Description for Artwork 10"></div>
+                <!-- ... and so on for all other images ... -->
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" style="display:none;">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
