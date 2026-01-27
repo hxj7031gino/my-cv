@@ -2,17 +2,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Page navigation logic
     const navStatement = document.getElementById('nav-statement');
     const navWork = document.getElementById('nav-work');
+    const navBiography = document.getElementById('nav-biography');
     const workSection = document.getElementById('work');
     const statementSection = document.getElementById('statement');
+    const biographySection = document.getElementById('biography');
 
     function showWork() {
         workSection.style.display = 'block';
         statementSection.style.display = 'none';
+        biographySection.style.display = 'none';
     }
 
     function showStatement() {
         workSection.style.display = 'none';
         statementSection.style.display = 'block';
+        biographySection.style.display = 'none';
+    }
+
+    function showBiography() {
+        workSection.style.display = 'none';
+        statementSection.style.display = 'none';
+        biographySection.style.display = 'block';
     }
 
     navWork.addEventListener('click', (e) => {
@@ -23,6 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     navStatement.addEventListener('click', (e) => {
         e.preventDefault();
         showStatement();
+    });
+
+    navBiography.addEventListener('click', (e) => {
+        e.preventDefault();
+        showBiography();
     });
 
     // Initial page state
