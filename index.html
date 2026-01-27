@@ -47,52 +47,25 @@
 </div>
 
 <script>
-    // 你的图片文件名列表（AI 已自动录入）
-    const images = [
-        "1.jpg", "2.jpg", "4.jpg", "8a2cb53bd90359a6d65583d420654254.jpg", 
-        "45c09af4b82368bd9613008f302a1d11.jpg", "66ad170650b4e0222c4b8be5ef1a3db6.jpg", 
-        "83dfa2b2dad7baab3d5fac31c4095b4e.jpg", "90a83e70d2774f4aa731b248b6460b13.jpg", 
-        "9759222057585094.jpg", "10505050483273067.jpg", "419268865326887857.jpg", 
-        "576634125517701338.jpg", "903225693836833068.jpg", "图.JPG", 
-        "微信图片_20231208193951.jpg", "微信图片_20231208193952.jpg", 
-        "微信图片_20240805222318.jpg", "微信图片_20240805222319.jpg", 
-        "微信图片_20240805222320.jpg", "微信图片_20240805222321.jpg", 
-        "微信图片_20240805222322.jpg", "微信图片_20240805222323.jpg", 
-        "微信图片_20240805222324.jpg", "微信图片_202312081939511.jpg", 
-        "微信图片_202312081939512.jpg", "微信图片_202312081939521.jpg", 
-        "微信图片_202408052223181.jpg", "微信图片_202408052223182.jpg", 
-        "微信图片_202408052223183.jpg", "微信图片_202408052223184.jpg", 
-        "微信图片_202408052223191.jpg", "微信图片_202408052223192.jpg", 
-        "微信图片_202408052223193.jpg", "微信图片_202408052223201.jpg", 
-        "微信图片_202408052223202.jpg", "微信图片_202408052223203.jpg", 
-        "微信图片_202408052223204.jpg", "微信图片_202408052223211.jpg", 
-        "微信图片_202408052223212.jpg", "微信图片_202408052223213.jpg", 
-        "微信图片_202408052223221.jpg", "微信图片_202408052223222.jpg", 
-        "微信图片_202408052223223.jpg", "微信图片_202408052223224.jpg", 
-        "微信图片_202408052223231.jpg", "微信图片_202408052223232.jpg", 
-        "微信图片_202408052223233.jpg", "微信图片_202408052223234.jpg", 
-        "我投降 back.jpg", "我投降.jpg", "知识就是力量.jpg", "a1.jpg", 
-        "Another Great Wave, Gol.jpg", "Another Great Wave, Silver.jpg", 
-        "Another Pearl Earing, Gold.jpg", "Another Pearl Earing, Silver.jpg", 
-        "Another Smile, Gold.jpg", "Another Smile, Silver.jpg", 
-        "b3acfc049ba65ccd0ced8b4bd3fd273d.jpg", "b79c9ade72f1c9560d00ced4ae8a59ff.jpg", 
-        "close up earing silver 2.JPG", "close up earning gold.JPG", 
-        "close up lisa gold.JPG", "close up wave gold 2.JPG", "close up wave silver.JPG", 
-        "f79ef9d520c89011991c2a1f32e992d8.jpg", "f5320a465db3d50b4bae41326c26e8d3.jpg", 
-        "IMG_0713 拷贝.png", "IMG_0716 拷贝.png", "IMG_0722 拷贝.png", 
-        "IMG_0729 拷贝.png", "IMG_0731 拷贝.png", "IMG_0750 拷贝 2.jpg", 
-        "IMG_0754 拷贝 2.jpg", "IMG_0754 拷贝2 2.jpg", "IMG_07524 拷贝 2.jpg", 
-        "IMG_07542 拷贝 2.jpg"
-    ];
-
+    // 告诉脚本你有多少张图
+    const totalImages = 79; 
     const gallery = document.getElementById('gallery');
-    images.forEach(filename => {
+
+    // 自动循环生成图片节点
+    for (let i = 1; i <= totalImages; i++) {
         const item = document.createElement('div');
         item.className = 'work-item';
-        // 假设图片放在 images/ 文件夹下
-        item.innerHTML = `<img src="images/${filename}" loading="lazy"><p>${filename}</p>`;
+        
+        // 这里匹配你刚才改的名字：image-1.jpg, image-2.jpg ...
+        // 注意：如果重命名出来没有前面的 0，就用 ${i}；如果有 01，就改成 ${String(i).padStart(2, '0')}
+        const fileName = `image-${i}.jpg`; 
+        
+        item.innerHTML = `
+            <img src="images/${fileName}" loading="lazy">
+            <p>Project Item ${i}</p>
+        `;
         gallery.appendChild(item);
-    });
+    }
 </script>
 
 </body>
