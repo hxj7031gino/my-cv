@@ -8,18 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const biographySection = document.getElementById('biography');
 
     function showWork() {
+        window.scrollTo(0, 0);
         workSection.style.display = 'block';
         statementSection.style.display = 'none';
         biographySection.style.display = 'none';
     }
 
     function showStatement() {
+        window.scrollTo(0, 0);
         workSection.style.display = 'none';
         statementSection.style.display = 'block';
         biographySection.style.display = 'none';
     }
 
     function showBiography() {
+        window.scrollTo(0, 0);
         workSection.style.display = 'none';
         statementSection.style.display = 'none';
         biographySection.style.display = 'block';
