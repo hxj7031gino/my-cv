@@ -57,7 +57,7 @@
         item.className = 'work-item';
         
         // 匹配你重命名后的格式：image-1.jpg, image-2.jpg ...
-        const fileName = `image-${i}.jpg`; 
+        const fileName = `image${i}.jpg`;
         
         item.innerHTML = `
             <img src="images/${fileName}" loading="lazy" onerror="this.parentElement.style.display='none'">
