@@ -162,11 +162,11 @@ main {
 
 /* CV Section Styling */
 .cv-section {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .cv-section h3 {
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1em;
@@ -184,6 +184,6 @@ main {
 }
 
 .cv-item p {
-    margin-bottom: 0.5em;
+    margin-bottom: 5px;
     line-height: 1.6;
 }
