@@ -159,3 +159,31 @@ main {
     line-height: 1.8;
     margin-bottom: 1.5em;
 }
+
+/* CV Section Styling */
+.cv-section {
+    margin-top: 40px;
+}
+
+.cv-section h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.cv-item {
+    margin-bottom: 25px;
+}
+
+.cv-item h4 {
+    font-weight: 500;
+    font-size: 1.05em;
+    margin-bottom: 10px;
+}
+
+.cv-item p {
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
