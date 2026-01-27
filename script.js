@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Page navigation logic
+    const navStatement = document.getElementById('nav-statement');
+    const navWork = document.getElementById('nav-work');
+    const workSection = document.getElementById('work');
+    const statementSection = document.getElementById('statement');
+
+    function showWork() {
+        workSection.style.display = 'block';
+        statementSection.style.display = 'none';
+    }
+
+    function showStatement() {
+        workSection.style.display = 'none';
+        statementSection.style.display = 'block';
+    }
+
+    navWork.addEventListener('click', (e) => {
+        e.preventDefault();
+        showWork();
+    });
+
+    navStatement.addEventListener('click', (e) => {
+        e.preventDefault();
+        showStatement();
+    });
+
+    // Initial page state
+    showWork();
+    
     const galleryGrid = document.querySelector('.gallery-grid');
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
