@@ -1,71 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xuanjun Huang (Gino) | Artist Portfolio</title>
-    <style>
-        body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #fff; color: #111; }
-        header { padding: 60px 20px; text-align: center; border-bottom: 1px solid #eee; position: sticky; top: 0; background: rgba(255,255,255,0.9); z-index: 100; backdrop-filter: blur(5px); }
-        h1 { font-size: 1.8em; letter-spacing: 6px; text-transform: uppercase; margin: 0; }
-        .subtitle { color: #888; font-size: 0.8em; letter-spacing: 2px; margin-top: 10px; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
-        
-        /* 简历预览区 */
-        .cv-section { margin-bottom: 80px; text-align: center; }
-        .cv-section iframe { width: 100%; height: 600px; border: 1px solid #eee; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        
-        /* 作品网格排版 */
-        h2 { font-weight: 300; letter-spacing: 3px; border-bottom: 1px solid #000; display: inline-block; padding-bottom: 5px; margin-bottom: 30px; }
-        .work-grid { column-count: 3; column-gap: 20px; }
-        .work-item { break-inside: avoid; margin-bottom: 20px; background: #f9f9f9; padding: 10px; transition: transform 0.3s ease; }
-        .work-item:hover { transform: translateY(-5px); }
-        .work-item img { width: 100%; height: auto; display: block; }
-        .work-item p { font-size: 0.7em; color: #999; margin-top: 8px; text-align: center; }
-
-        @media (max-width: 800px) { .work-grid { column-count: 2; } }
-        @media (max-width: 500px) { .work-grid { column-count: 1; } }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Xuanjun Huang (Gino)</h1>
-    <div class="subtitle">printmaker | art | phenomenology researcher  </div>
-</header>
+    <header>
+        <div class="header-content">
+            <h1>Xuanjun Huang (Gino)</h1>
+            <nav>
+                <a href="#works">Works</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<div class="container">
-    <div class="cv-section">
-        <h2>Curriculum Vitae</h2>
-        <iframe src="CV_Gino_Wong_2026.pdf"></iframe>
+    <main>
+        <section id="works">
+            <div class="gallery-grid">
+                <!-- Images will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
     </div>
 
-    <div class="gallery-section">
-        <h2>Selected Works</h2>
-        <div id="gallery" class="work-grid"></div>
-    </div>
-</div>
-
-<script>
-    // 1. 设置你的图片总数
-    const totalImages = 77; 
-    const gallery = document.getElementById('gallery');
-
-    // 2. 循环生成图片，不再需要手动输入那串长长的名字
-    for (let i = 1; i <= totalImages; i++) {
-        const item = document.createElement('div');
-        item.className = 'work-item';
-        
-        // 匹配你重命名后的格式：image-1.jpg, image-2.jpg ...
-        const fileName = `image${i}.jpg`;
-        
-        item.innerHTML = `
-            <img src="images/${fileName}" loading="lazy" onerror="this.parentElement.style.display='none'">
-            <p>Work ${i}</p>
-        `;
-        gallery.appendChild(item);
-    }
-</script>
+    <script src="script.js"></script>
 
 </body>
 </html>
