@@ -47,22 +47,21 @@
 </div>
 
 <script>
-    // 告诉脚本你有多少张图
-    const totalImages = 79; 
+    // 1. 设置你的图片总数
+    const totalImages = 77; 
     const gallery = document.getElementById('gallery');
 
-    // 自动循环生成图片节点
+    // 2. 循环生成图片，不再需要手动输入那串长长的名字
     for (let i = 1; i <= totalImages; i++) {
         const item = document.createElement('div');
         item.className = 'work-item';
         
-        // 这里匹配你刚才改的名字：image-1.jpg, image-2.jpg ...
-        // 注意：如果重命名出来没有前面的 0，就用 ${i}；如果有 01，就改成 ${String(i).padStart(2, '0')}
+        // 匹配你重命名后的格式：image-1.jpg, image-2.jpg ...
         const fileName = `image-${i}.jpg`; 
         
         item.innerHTML = `
-            <img src="images/${fileName}" loading="lazy">
-            <p>Project Item ${i}</p>
+            <img src="images/${fileName}" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <p>Work ${i}</p>
         `;
         gallery.appendChild(item);
     }
