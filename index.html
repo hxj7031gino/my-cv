@@ -2,50 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Gino Wong - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gino Wong - Artist</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Gino Wong</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="statement.html">Artist Statement</a>
-            <a href="work.html">Work</a>
-            <a href="biography.html">Biography</a>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="#top" class="nav-link" data-section="home">Home</a>
+            <a href="#work" class="nav-link" data-section="work">Work</a>
+            <a href="#statement" class="nav-link" data-section="statement">Artist Statement</a>
+            <a href="#biography" class="nav-link" data-section="biography">Biography</a>
         </nav>
     </header>
-
     <main>
-        <section class="recent-projects">
-            <h2>recent project</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <a href="#">
-                        <img src="images/image68.png" alt="Placeholder for recent project 1">
-                        <h3>Project Title One</h3>
-                        <p>A brief description of the project, medium, year.</p>
+        <!-- Home Section -->
+        <section id="top" class="home-section">
+            <h1 class="site-title">Gino Wong</h1>
+            <p class="intro-text">Minimalist artist based in Hong Kong. Exploring the boundaries of form and perception.</p>
+            <h2 class="section-subtitle">Selected Works</h2>
+            <div class="selected-works-grid">
+                <a class="selected-work-card" href="works/work-one/index.html">
+                    <img src="images/image1.jpg" alt="Work One">
+                    <div class="selected-work-title">Work One</div>
+                </a>
+                <a class="selected-work-card" href="works/work-two/index.html">
+                    <img src="images/image2.jpg" alt="Work Two">
+                    <div class="selected-work-title">Work Two</div>
+                </a>
+                <a class="selected-work-card" href="works/work-three/index.html">
+                    <img src="images/image3.jpg" alt="Work Three">
+                    <div class="selected-work-title">Work Three</div>
+                </a>
+            </div>
+        </section>
+        <!-- Work Section -->
+        <section id="work" class="work-section">
+            <h2 class="section-title">Work</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <a href="works/work-one/index.html">
+                        <img src="images/image1.jpg" alt="Work One Cover">
+                        <div class="work-card-title">Work One</div>
+                        <div class="work-card-desc">2023 · Oil on canvas · 120x90cm</div>
                     </a>
                 </div>
-                <div class="project-item">
-                    <a href="#">
-                        <img src="images/image69.png" alt="Placeholder for recent project 2">
-                        <h3>Project Title Two</h3>
-                        <p>A brief description of the project, medium, year.</p>
+                <div class="work-card">
+                    <a href="works/work-two/index.html">
+                        <img src="images/image2.jpg" alt="Work Two Cover">
+                        <div class="work-card-title">Work Two</div>
+                        <div class="work-card-desc">2022 · Mixed media · 100x80cm</div>
                     </a>
                 </div>
-                <div class="project-item">
-                    <a href="#">
-                        <img src="images/image70.png" alt="Placeholder for recent project 3">
-                        <h3>Project Title Three</h3>
-                        <p>A brief description of the project, medium, year.</p>
+                <div class="work-card">
+                    <a href="works/work-three/index.html">
+                        <img src="images/image3.jpg" alt="Work Three Cover">
+                        <div class="work-card-title">Work Three</div>
+                        <div class="work-card-desc">2021 · Ink on paper · 60x40cm</div>
                     </a>
                 </div>
             </div>
         </section>
+        <!-- Artist Statement Section -->
+        <section id="statement" class="statement-section">
+            <h2 class="section-title">Artist Statement</h2>
+            <div class="statement-content">
+                <p>
+                    My work explores the tension between emptiness and presence, using minimal forms to evoke a sense of quiet contemplation. Each piece is an invitation to pause, reflect, and engage with the subtle interplay of light, space, and material.
+                </p>
+            </div>
+        </section>
+        <!-- Biography Section -->
+        <section id="biography" class="biography-section">
+            <h2 class="section-title">Biography</h2>
+            <div class="biography-content">
+                <p>
+                    Gino Wong (b. 1996, Hong Kong) is a contemporary artist whose practice spans painting, installation, and conceptual art. Educated at the Hong Kong Academy of Arts, Wong’s work has been exhibited internationally and recognized for its meditative qualities.
+                </p>
+            </div>
+        </section>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>

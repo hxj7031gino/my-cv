@@ -1,4 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Nav active 高亮
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = ['top', 'work', 'statement', 'biography'];
+
+    function setActiveNav() {
+        let scrollPos = window.scrollY + 90; // 90px offset for sticky nav
+        let activeIndex = 0;
+        sections.forEach((id, idx) => {
+            const sec = document.getElementById(id);
+            if (sec && sec.offsetTop <= scrollPos) {
+                activeIndex = idx;
+            }
+        });
+        navLinks.forEach((link, idx) => {
+            if (idx === activeIndex) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', setActiveNav);
+    setActiveNav();
+});
+
     // Page navigation logic
     const navStatement = document.getElementById('nav-statement');
     const navWork = document.getElementById('nav-work');
