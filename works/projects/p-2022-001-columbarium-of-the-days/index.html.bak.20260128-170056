@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Columbarium Of The Days</title>
+  <link rel="stylesheet" href="../../../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-title-wrapper">
+      <a class="site-title" href="../../../index.html">Gino Wong</a>
+    </div>
+    <nav class="site-nav">
+      <a href="../../../index.html" class="nav-link">Home</a>
+      <a href="../../../work.html" class="nav-link">Work</a>
+      <a href="../../../statement.html" class="nav-link">Artist Statement</a>
+      <a href="../../../biography.html" class="nav-link">Biography</a>
+    </nav>
+  </header>
+
+  <main class="project-main">
+    <h1 class="project-title">Columbarium Of The Days</h1>
+
+    <figure class="project-hero">
+      <img src="img/hero.jpg" alt="Columbarium Of The Days hero" />
+    </figure>
+
+    <section class="project-gallery">
+      <h2 class="project-section-title">Gallery</h2>
+      <div class="project-grid">
+        <img src="img/01.jpg" alt="Columbarium Of The Days image 01" />
+        <!-- Add more images: 02.jpg, 03.jpg... -->
+      </div>
+    </section>
+
+    <section class="project-meta">
+      <h2 class="project-section-title">Information</h2>
+      <div class="project-meta-row"><span>Year</span><span></span></div>
+      <div class="project-meta-row"><span>Medium</span><span></span></div>
+      <div class="project-meta-row"><span>Dimensions</span><span></span></div>
+    </section>
+
+    <div class="project-back">
+      <a href="../../../work.html">Back to Work</a>
+    </div>
+  </main>
+</body>
+</html>

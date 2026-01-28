@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work - Gino Wong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="work.html" class="nav-link">Work</a>
+            <a href="statement.html" class="nav-link">Artist Statement</a>
+            <a href="biography.html" class="nav-link">Biography</a>
+        </nav>
+    </header>
+    <main>
+        <section class="work-section">
+            <h1 class="section-title">Work</h1>
+            <div class="work-grid">
+                <div class="work-card">
+                    <a href="works/work-one/index.html">
+                        <img src="images/image1.jpg" alt="Work One Cover">
+                        <div class="work-card-title">Work One</div>
+                        <div class="work-card-desc">2023 · Oil on canvas · 120x90cm</div>
+                    </a>
+                </div>
+                <div class="work-card">
+                    <a href="works/work-two/index.html">
+                        <img src="images/image2.jpg" alt="Work Two Cover">
+                        <div class="work-card-title">Work Two</div>
+                        <div class="work-card-desc">2022 · Mixed media · 100x80cm</div>
+                    </a>
+                </div>
+                <div class="work-card">
+                    <a href="works/work-three/index.html">
+                        <img src="images/image3.jpg" alt="Work Three Cover">
+                        <div class="work-card-title">Work Three</div>
+                        <div class="work-card-desc">2021 · Ink on paper · 60x40cm</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
