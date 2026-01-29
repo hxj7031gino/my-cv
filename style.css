@@ -70,7 +70,7 @@ main {
 
 .project-detail .project-gallery-solo {
     max-width: 1100px;
-    margin: 0 auto 56px;
+    margin: 0 auto 80px;
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -85,7 +85,7 @@ main {
 
 .project-detail .project-gallery-grid4 {
     max-width: 1100px;
-    margin: 0 auto 56px;
+    margin: 24px auto 96px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
@@ -95,6 +95,16 @@ main {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.project-detail .back-link,
+.back-link {
+    color: #000;
+}
+
+.project-detail .back-link:hover,
+.back-link:hover {
+    color: #000;
 }
 
 .gallery-item {
