@@ -218,7 +218,7 @@ main {
 .work-page .work-row{
   display: grid;
   grid-template-columns: minmax(260px, 520px) 1fr;
-  gap: 80px;
+  gap: 120px;
   align-items: center;
   text-decoration: none;
   color: inherit;
