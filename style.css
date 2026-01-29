@@ -77,14 +77,14 @@ main {
 }
 
 .project-detail .project-gallery-solo img {
-    width: 70%;
+    width: 35%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
 .project-detail .project-gallery-grid4 {
-    max-width: 880px;
+    max-width: 616px;
     margin: 24px auto 96px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
