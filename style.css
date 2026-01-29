@@ -70,21 +70,22 @@ main {
 
 .project-detail .project-gallery-solo {
     max-width: 1100px;
-    margin: 0 auto 28px;
+    margin: 0 auto 56px;
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 
 .project-detail .project-gallery-solo img {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
+    margin: 0 auto;
 }
 
 .project-detail .project-gallery-grid4 {
     max-width: 1100px;
-    margin: 0 auto 28px;
+    margin: 0 auto 56px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
@@ -185,6 +186,9 @@ main {
     .project-detail .project-gallery-grid4 {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+    .project-detail .project-gallery-solo img {
+        width: 100%;
     }
 }
 
