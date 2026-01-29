@@ -251,6 +251,20 @@ main {
   .work-page .work-meta{ text-align: center; }
   .work-page .work-thumb{ height: 260px; }
 }
+/* ===== Work: typography override (smaller) ===== */
+.work-page .work-line{
+  font-size: 1.15em; /* smaller title */
+}
+.work-page .work-year{
+  font-size: 0.9em;  /* smaller year */
+}
+/* ===== Work: typography override (match Home) ===== */
+.work-page .work-line{
+  font-size: 0.95em; /* match .selected-work-title */
+}
+.work-page .work-year{
+  font-size: 0.85em; /* match .selected-work-year */
+}
 /* ===== Header title link override ===== */
 .site-header .site-title .site-title-link{
   text-decoration: none !important; /* remove underline */
@@ -259,12 +273,4 @@ main {
   font-weight: inherit;
   letter-spacing: 1px;
   text-transform: none;
-}
-/* ===== Work: typography override (match Home) ===== */
-.work-page .work-line{
-  font-size: 0.95em;
-  text-decoration: none;
-}
-.work-page .work-year{
-  font-size: 0.85em;
 }
