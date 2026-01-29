@@ -274,3 +274,13 @@ main {
   letter-spacing: 1px;
   text-transform: none;
 }
+/* ===== Header title: match nav font + lowercase (do not change size) ===== */
+.site-header .site-title .site-title-link{
+  font-family: inherit;
+  text-transform: lowercase;
+}
+
+/* ===== Work page: hide big "Work" title only ===== */
+.work-page .section-title{
+  display: none;
+}
