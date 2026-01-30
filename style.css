@@ -89,11 +89,15 @@ main {
     margin: 0 auto;
 }
 
-.detail-size-override .project-grid img {
+.detail-size-override main img {
     width: 75%;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.detail-size-override .project-hero img {
+    width: 50%;
 }
 
 .project-detail {
@@ -214,7 +218,7 @@ main {
     .detail-size-override .project-hero img {
         width: 100%;
     }
-    .detail-size-override .project-grid img {
+    .detail-size-override main img {
         width: 100%;
     }
     .project-detail .project-gallery-grid4 {
