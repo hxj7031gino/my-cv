@@ -117,11 +117,11 @@ main {
 }
 
 .east-london-page .el-feature .el-row:nth-child(odd) {
-    transform: translateX(-80px);
+    transform: translateX(-120px);
 }
 
 .east-london-page .el-feature .el-row:nth-child(even) {
-    transform: translateX(80px);
+    transform: translateX(120px);
 }
 
 .east-london-page .el-grid4x3 .el-grid {
@@ -157,6 +157,10 @@ main {
 
 .east-london-page .el-description p {
     margin: 0 0 18px;
+}
+
+.east-london-page img {
+    transform: translateY(150px);
 }
 
 .east-london-page .el-portrait .el-grid img {
