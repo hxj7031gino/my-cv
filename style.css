@@ -44,6 +44,14 @@ nav a:hover {
     color: #000;
 }
 
+.site-title-link:visited {
+    color: inherit;
+}
+
+.site-nav .nav-link:visited {
+    color: inherit;
+}
+
 main {
     padding: 40px 20px;
 }
