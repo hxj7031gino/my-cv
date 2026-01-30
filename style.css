@@ -146,8 +146,8 @@ main {
 
 .east-london-page .el-description {
     max-width: 600px;
-    margin: 250px auto 250px;
-    line-height: 1;
+    margin: 350px auto 350px;
+    line-height: 1.2;
     text-align: justify;
 }
 
