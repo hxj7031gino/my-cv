@@ -82,6 +82,14 @@ main {
     display: block;
 }
 
+.east-london-page .project-hero img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .east-london-page .el-group {
     max-width: 1100px;
     margin: 0 auto 200px;
@@ -133,6 +141,22 @@ main {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.east-london-page .el-description {
+    max-width: 1100px;
+    margin: 0 auto 200px;
+    line-height: 1.8;
+}
+
+.east-london-page .el-description h2,
+.east-london-page .el-description h3 {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.east-london-page .el-description p {
+    margin: 0 0 18px;
 }
 
 .east-london-page .el-portrait .el-grid img {
