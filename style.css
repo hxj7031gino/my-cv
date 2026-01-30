@@ -87,9 +87,10 @@ main {
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(0, 575px) minmax(0, 600px);
-    gap: 80px;
+    gap: 180px;
     align-items: start;
     justify-content: center;
+    transform: translateX(150px);
 }
 
 .making-conversation-page .mc-collage {
@@ -397,6 +398,7 @@ main {
     .making-conversation-page .mc-split {
         grid-template-columns: 1fr;
         gap: 40px;
+        transform: none;
     }
     .making-conversation-page .mc-collage {
         max-width: 520px;
