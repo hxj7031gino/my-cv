@@ -105,14 +105,20 @@ main {
 
 .east-london-page .el-portrait .el-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 200px);
     gap: 40px;
+    justify-content: center;
 }
 
 .east-london-page .el-grid img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.east-london-page .el-portrait .el-grid img {
+    width: 200px;
+    height: auto;
 }
 
 .alienated-page .project-midtitle {
