@@ -86,16 +86,18 @@ main {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 575px) minmax(0, 600px);
     gap: 80px;
     align-items: start;
+    justify-content: start;
 }
 
 .making-conversation-page .mc-collage {
     position: relative;
     max-width: 575px;
     width: 100%;
-    height: 560px;
+    height: 650px;
+    margin: 0;
 }
 
 .making-conversation-page .mc-collage img {
@@ -107,18 +109,19 @@ main {
     object-fit: contain;
 }
 
-.making-conversation-page .mc-collage .img-1 { width: 240px; top: 0; left: 0; }
-.making-conversation-page .mc-collage .img-2 { width: 200px; top: 40px; left: 280px; }
-.making-conversation-page .mc-collage .img-3 { width: 250px; top: 160px; left: 40px; }
-.making-conversation-page .mc-collage .img-4 { width: 210px; top: 190px; left: 300px; }
-.making-conversation-page .mc-collage .img-5 { width: 230px; top: 330px; left: 0; }
-.making-conversation-page .mc-collage .img-6 { width: 190px; top: 360px; left: 280px; }
-.making-conversation-page .mc-collage .img-7 { width: 220px; top: 470px; left: 140px; }
+.making-conversation-page .mc-collage .img-1 { width: 240px; top: 0; left: 0; z-index: 2; }
+.making-conversation-page .mc-collage .img-2 { width: 210px; top: 30px; left: 250px; z-index: 3; }
+.making-conversation-page .mc-collage .img-3 { width: 250px; top: 150px; left: 40px; z-index: 4; }
+.making-conversation-page .mc-collage .img-4 { width: 220px; top: 185px; left: 285px; z-index: 5; }
+.making-conversation-page .mc-collage .img-5 { width: 230px; top: 340px; left: 0; z-index: 3; }
+.making-conversation-page .mc-collage .img-6 { width: 200px; top: 370px; left: 240px; z-index: 4; }
+.making-conversation-page .mc-collage .img-7 { width: 230px; top: 510px; left: 120px; z-index: 5; }
 
 .making-conversation-page .mc-text {
     max-width: 600px;
     line-height: 1.8;
     white-space: pre-line;
+    text-align: left;
 }
 
 .making-conversation-page .mc-text p {
@@ -394,14 +397,19 @@ main {
         gap: 40px;
     }
     .making-conversation-page .mc-collage {
-        height: auto;
+        max-width: 520px;
+        height: 560px;
     }
     .making-conversation-page .mc-collage img {
-        position: static;
-        width: 100%;
-        max-width: 600px;
-        margin: 0 0 20px;
+        max-width: 210px;
     }
+    .making-conversation-page .mc-collage .img-1 { width: 200px; top: 0; left: 0; }
+    .making-conversation-page .mc-collage .img-2 { width: 180px; top: 25px; left: 210px; }
+    .making-conversation-page .mc-collage .img-3 { width: 210px; top: 130px; left: 30px; }
+    .making-conversation-page .mc-collage .img-4 { width: 190px; top: 165px; left: 235px; }
+    .making-conversation-page .mc-collage .img-5 { width: 200px; top: 300px; left: 0; }
+    .making-conversation-page .mc-collage .img-6 { width: 180px; top: 330px; left: 205px; }
+    .making-conversation-page .mc-collage .img-7 { width: 200px; top: 455px; left: 105px; }
     .east-london-page .el-feature .el-row {
         grid-template-columns: 1fr;
         transform: none;
@@ -456,6 +464,13 @@ main {
     .project-grid {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+    .making-conversation-page .mc-collage {
+        max-width: 420px;
+        height: 520px;
+    }
+    .making-conversation-page .mc-collage img {
+        max-width: 170px;
     }
     .east-london-page .el-grid4x3 .el-grid {
         grid-template-columns: 1fr;
