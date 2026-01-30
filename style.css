@@ -116,6 +116,11 @@ main {
 .columbarium-page .col-text {
     max-width: 450px;
     line-height: 1.6;
+    text-align: justify;
+}
+
+.columbarium-page .col-text h2 {
+    font-weight: 400;
 }
 
 .columbarium-page .col-dates {
