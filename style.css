@@ -101,13 +101,13 @@ main {
 
 .columbarium-page .col-feature-grid {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 200px);
     gap: 40px;
     align-content: start;
 }
 
 .columbarium-page .col-feature-grid img {
-    width: 300px;
+    width: 200px;
     height: auto;
     display: block;
     object-fit: contain;
@@ -463,7 +463,7 @@ main {
     }
     .columbarium-page .col-feature-grid img {
         width: 100%;
-        max-width: 300px;
+        max-width: 200px;
     }
     .columbarium-page .date-grid {
         grid-template-columns: repeat(5, 1fr);
