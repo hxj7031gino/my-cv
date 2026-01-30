@@ -82,6 +82,49 @@ main {
     display: block;
 }
 
+.making-conversation-page .mc-split {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.making-conversation-page .mc-collage {
+    position: relative;
+    max-width: 575px;
+    width: 100%;
+    height: 560px;
+}
+
+.making-conversation-page .mc-collage img {
+    position: absolute;
+    display: block;
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.making-conversation-page .mc-collage .img-1 { width: 240px; top: 0; left: 0; }
+.making-conversation-page .mc-collage .img-2 { width: 200px; top: 40px; left: 280px; }
+.making-conversation-page .mc-collage .img-3 { width: 250px; top: 160px; left: 40px; }
+.making-conversation-page .mc-collage .img-4 { width: 210px; top: 190px; left: 300px; }
+.making-conversation-page .mc-collage .img-5 { width: 230px; top: 330px; left: 0; }
+.making-conversation-page .mc-collage .img-6 { width: 190px; top: 360px; left: 280px; }
+.making-conversation-page .mc-collage .img-7 { width: 220px; top: 470px; left: 140px; }
+
+.making-conversation-page .mc-text {
+    max-width: 600px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.making-conversation-page .mc-text p {
+    margin: 0 0 16px;
+}
+
 .east-london-page .project-hero img {
     width: 100%;
     max-width: 350px;
@@ -345,6 +388,19 @@ main {
     }
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .making-conversation-page .mc-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .making-conversation-page .mc-collage {
+        height: auto;
+    }
+    .making-conversation-page .mc-collage img {
+        position: static;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 0 20px;
     }
     .east-london-page .el-feature .el-row {
         grid-template-columns: 1fr;
