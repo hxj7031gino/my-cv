@@ -87,6 +87,12 @@ main {
     margin: 12px auto 28px;
 }
 
+.alienated-page .project-hero img {
+    height: 600px;
+    width: auto;
+    max-width: 100%;
+}
+
 .alienated-page .project-detail-split {
     max-width: 1100px;
     margin: 0 auto 32px;
