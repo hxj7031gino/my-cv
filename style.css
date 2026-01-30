@@ -90,6 +90,56 @@ main {
     display: block;
 }
 
+.columbarium-page .col-split {
+    max-width: 1100px;
+    margin: 450px auto 300px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 100px;
+    align-items: start;
+}
+
+.columbarium-page .col-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 40px;
+    align-content: start;
+}
+
+.columbarium-page .col-feature-grid img {
+    width: 300px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.columbarium-page .col-text {
+    max-width: 450px;
+    line-height: 1.6;
+}
+
+.columbarium-page .col-dates {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.columbarium-page .col-dates .date-group {
+    margin: 0 0 150px;
+}
+
+.columbarium-page .date-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 14px;
+}
+
+.columbarium-page .date-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
 .making-conversation-page .mc-split {
     max-width: 1100px;
     margin: 0 auto;
@@ -404,6 +454,20 @@ main {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .columbarium-page .col-split {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .columbarium-page .col-feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .columbarium-page .col-feature-grid img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .columbarium-page .date-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
     .making-conversation-page .mc-split {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -477,6 +541,12 @@ main {
     .project-grid {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+    .columbarium-page .col-feature-grid {
+        grid-template-columns: 1fr;
+    }
+    .columbarium-page .date-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
     .making-conversation-page .mc-collage {
         max-width: 420px;
